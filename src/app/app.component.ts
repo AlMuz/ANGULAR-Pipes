@@ -33,4 +33,11 @@ export class AppComponent {
     { title: 'Cheese', text: 'Yummy!' },
     { title: 'Potato', text: 'Food for good guys!' },
   ];
+
+  addPosts() {
+    this.posts.push({
+      title: `Angular ${Math.random()}`,
+      text: 'Somet tests!',
+    });
+  }
 }
