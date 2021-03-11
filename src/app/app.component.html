@@ -1,7 +1,13 @@
 <div>
   <h1>Angular Pipes</h1>
 
+  <h2>numbers</h2>
   <p>{{ e | number: "1.5" }}</p>
 
   <p>{{ e | number: "3.1-2" }}</p>
+
+  <h2>strings</h2>
+  <p>{{ str | uppercase }}</p>
+  <p>{{ str | titlecase }}</p>
+  <p>{{ str | slice: 2:5 }}</p>
 </div>
