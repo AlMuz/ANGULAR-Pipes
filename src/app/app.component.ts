@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
 
+export interface Post {
+  title: string;
+  text: string;
+}
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -19,4 +24,13 @@ export class AppComponent {
       g: {},
     },
   };
+
+  search = '';
+
+  posts: Post[] = [
+    { title: 'Beer', text: 'The best drink in the world!' },
+    { title: 'Bread', text: 'Tasty thing!' },
+    { title: 'Cheese', text: 'Yummy!' },
+    { title: 'Potato', text: 'Food for good guys!' },
+  ];
 }
