@@ -3,11 +3,21 @@
 
   <h2>numbers</h2>
   <p>{{ e | number: "1.5" }}</p>
-
   <p>{{ e | number: "3.1-2" }}</p>
 
   <h2>strings</h2>
   <p>{{ str | uppercase }}</p>
   <p>{{ str | titlecase }}</p>
   <p>{{ str | slice: 2:5 }}</p>
+
+  <h2>date</h2>
+  <p>{{ date | date: "fullDate" }}</p>
+
+  <h2>float</h2>
+  <p>{{ float }}</p>
+  <p>{{ float | currency }}</p>
+  <p>{{ float | percent }}</p>
+
+  <h2>object</h2>
+  <pre>{{ obj | json }}</pre>
 </div>
